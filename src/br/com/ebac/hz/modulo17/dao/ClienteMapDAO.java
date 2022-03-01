@@ -20,7 +20,7 @@ public class ClienteMapDAO extends GenericDAO<Cliente> implements IClienteDAO{
     }
 
     @Override
-    public Class<Cliente> getTipoClasse() {
+        public Class<Cliente> getTipoClasse() {
         return Cliente.class;
     }
 

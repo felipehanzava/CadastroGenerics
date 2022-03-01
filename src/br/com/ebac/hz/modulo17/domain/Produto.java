@@ -1,7 +1,10 @@
 package br.com.ebac.hz.modulo17.domain;
 
+import br.com.ebac.hz.modulo17.annotation.TipoChave;
+
 public class Produto implements Persistente {
 
+    @TipoChave("getCodigo")
     private Long codigo;
 
     private String nome;
@@ -18,7 +21,6 @@ public class Produto implements Persistente {
         this.nome = nome;
     }
 
-    @Override
     public Long getCodigo() {
         return this.codigo;
     }

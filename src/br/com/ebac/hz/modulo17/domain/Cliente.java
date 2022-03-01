@@ -1,11 +1,14 @@
 package br.com.ebac.hz.modulo17.domain;
 
+import br.com.ebac.hz.modulo17.annotation.TipoChave;
+
 import java.util.Objects;
 
 
 public class Cliente implements Persistente{
 
     private String nome;
+    @TipoChave("getCpf")
     private Long cpf;
     private Long tel;
     private String end;
@@ -99,8 +102,8 @@ public class Cliente implements Persistente{
                 + "cpf=" + cpf;
     }
 
-    @Override
+   /* @Override
     public Long getCodigo() {
         return this.cpf;
-    }
+    }*/
 }
